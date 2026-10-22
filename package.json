@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-adzuna",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Adzuna MCP — global job-board aggregator",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-7cf1f75c706478fda999b85755df3a8a9ee0058c102e8444eb0fb13db14e894d",
-    "sourceCommit": "351c40908821cfecc9bb2f5849d87bbfdbb26d75"
+    "sourceHash": "v1-f80bc5ab4362a52b00efbec26cf4b75083e57fb7df3a518587468279d62c0f6a",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
   }
 }
