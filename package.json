@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-adzuna",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Adzuna MCP — global job-board aggregator",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-adzuna": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "adzuna"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-adzuna.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/adzuna",
   "pipeworx": {
-    "sourceHash": "v1-f80bc5ab4362a52b00efbec26cf4b75083e57fb7df3a518587468279d62c0f6a",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "adzuna",
+    "gatewaySlug": "adzuna",
+    "sourceHash": "v1-a393c0a27ba370d9ccc872fb2a45381d729eac060b338fe490b46fcb897e6808",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
